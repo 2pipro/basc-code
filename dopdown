@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  Select your favorite fruit:
+  <select id="mySelect" onclick="myFunction()">
+   <option  value="0">Select</option>
+    <option  value="1">Apple</option>
+    <option value="2">Orange</option>
+    <option value="3">Pineapple</option>
+    <option value="4">Banana</option>
+  </select>
+</form>
+
+<p  id="val">Click the button to return the value of the selected fruit.</p>
+
+<button type="button" >Try it</button>
+
+<p id="demo"></p>
+
+
+<script>
+
+
+
+function myFunction() {
+  var x = document.getElementById("mySelect").value;
+   var y = document.getElementById("val").value;
+  
+  if(x==1){
+  document.getElementById("demo").innerHTML = "<h1>World</h2>";
+  }else if(x==2){
+  document.getElementById("demo").innerHTML = "<h2> hello</h2>";
+  }else if(x==3){
+  document.getElementById("demo").innerHTML = "<h2> here</h2>";
+  }
+  
+}
+</script>
+
+</body>
+</html>
